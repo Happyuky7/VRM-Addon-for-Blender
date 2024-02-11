@@ -15,9 +15,8 @@ jobs:
     strategy:
       matrix:
         archive_url:
-          - https://mirrors.ocf.berkeley.edu/blender/release/Blender2.93/blender-2.93.9-windows-x64.zip
-          - https://mirrors.ocf.berkeley.edu/blender/release/Blender3.3/blender-3.3.0-windows-x64.zip
-          - https://mirrors.ocf.berkeley.edu/blender/release/Blender3.6/blender-3.6.0-windows-x64.zip
+          - https://builder.blender.org/download/daily/blender-4.2.0-alpha+main.0a2544f2e8c8-windows.amd64-release.zip
+          - https://builder.blender.org/download/daily/blender-4.1.0-beta+v41.ced066e0c8db-windows.amd64-release.zip
     env:
       BLENDER_VRM_EXCLUDE_GUI_TEST: true
     steps:
@@ -62,9 +61,8 @@ jobs:
     strategy:
       matrix:
         archive_url:
-          - https://mirrors.ocf.berkeley.edu/blender/release/Blender2.93/blender-2.93.9-macos-arm64.dmg
-          - https://mirrors.ocf.berkeley.edu/blender/release/Blender3.3/blender-3.3.0-macos-arm64.dmg
-          - https://mirrors.ocf.berkeley.edu/blender/release/Blender3.6/blender-3.6.0-macos-arm64.dmg
+          - https://builder.blender.org/download/daily/blender-4.2.0-alpha+main.0a2544f2e8c8-darwin.arm64-release.dmg
+          - https://builder.blender.org/download/daily/blender-4.1.0-beta+v41.0f266ca3c99c-darwin.arm64-release.dmg
     env:
       BLENDER_VRM_EXCLUDE_GUI_TEST: true
     steps:
